@@ -33,6 +33,7 @@ class CloroApiViewDetail(APIView):
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
     def delete(self, request, id):
         cloro = self.get_object(id)
         cloro.delete()

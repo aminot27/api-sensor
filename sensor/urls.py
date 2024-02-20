@@ -20,5 +20,5 @@ from cloro.urls import urlpatterns_cloro
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(urlpatterns_cloro)),
+    path('', include(urlpatterns_cloro)),
 ]

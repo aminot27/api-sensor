@@ -9,5 +9,5 @@ class CloroModel(models.Model):
     data_turbidez = models.CharField(max_length=10, verbose_name="Dato de Turbidez")
 
     class Meta:
-        db_table = "UNSAAC_TESIS_ELECTRONICA"
+        db_table = "cloro"
         ordering = ['-created_at']
